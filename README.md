@@ -5,10 +5,7 @@
 [![Build Status](https://github.com/kool7d/Prots.jl/workflows/CI/badge.svg)](https://github.com/kool7d/Prots.jl/actions)
 
 This code base is using the Julia Language and [DrWatson](https://juliadynamics.github.io/DrWatson.jl/stable/)
-to make a reproducible scientific project named
-> Prots
-
-It is authored by Dan Kool.
+to make a reproducible scientific project.
 
 To (locally) reproduce this project, do the following:
 
