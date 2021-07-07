@@ -1,13 +1,6 @@
 name = "Prots"
-uuid = "bb9abe03-54e2-40cb-b00b-87678ffa2106"
 authors = ["Kool"]
-version = "0.1.0"
-
 [compat]
-julia = "1.6"
-
-[extras]
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
-
-[targets]
-test = ["Test"]
+julia = "1.6.1"
+[deps]
+DrWatson = "634d3b9d-ee7a-5ddf-bec9-22491ea816e1"
