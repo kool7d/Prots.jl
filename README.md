@@ -8,7 +8,7 @@ This code base is using the Julia Language and [DrWatson](https://juliadynamics.
 to make a reproducible scientific project named
 > Prots
 
-It is authored by Kool.
+It is authored by Dan Kool.
 
 To (locally) reproduce this project, do the following:
 
