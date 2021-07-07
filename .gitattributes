@@ -2,19 +2,15 @@
 # git config --global core.attributesfile ~/git-global/.gitattributes_global
 #
 # Use this file on every device where git development is done.
-
-
 ###
 ### Auto detect text files and perform LF normalization
 ###
 # http://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
 * text=auto
-
 ###
 ### The above will handle all files NOT found below.
 ### From https://github.com/alexkaratarakis/gitattributes
 ###
-
 ### gitattributes/C++.gitattributes d3b93d4 on Jun 20, 2018
 #sources
 *.c text diff=cpp
@@ -26,33 +22,27 @@
 *.h text diff=cpp
 *.h++ text diff=cpp
 *.hh text diff=cpp
-
 # Compiled Object files
 *.slo binary
 *.lo binary
 *.o binary
 *.obj binary
-
 # Precompiled Headers
 *.gch binary
 *.pch binary
-
 # Compiled Dynamic libraries
 *.so binary
 *.dylib binary
 *.dll binary
-
 # Compiled Static libraries
 *.lai binary
 *.la binary
 *.a binary
 *.lib binary
-
 # Executables
 *.exe binary
 *.out binary
 *.app binary      
-
 # Other
 ##############
 *.exe		binary
@@ -62,18 +52,14 @@
 *.XLS   binary
 *.XLSX  binary
 bin/	binary
-
 ### gitattributes/Common.gitattributes 9b38185 on Jun 9, 2018
 # Common settings that generally should always be used with your language specific settings
-
 # Auto detect text files and perform LF normalization
 # http://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
 * text=auto
-
 #
 # The above will handle all files NOT found below
 #
-
 # Documents
 *.doc	 diff=astextplain
 *.DOC	 diff=astextplain
@@ -94,7 +80,6 @@ bin/	binary
 *.tab text
 *.tsv text
 *.sql text
-
 # Graphics
 *.png binary
 *.jpg binary
@@ -108,12 +93,10 @@ bin/	binary
 *.svg binary
 #*.svg text
 *.eps binary       
-
 ### gitattributes/Java.gitattributes c08b42f on Mar 29, 2017
 # Handle line endings automatically for files detected as text
 # and leave all files detected as binary untouched.
 * text=auto
-
 #
 # The above will handle all files NOT found below
 #
@@ -137,7 +120,6 @@ bin/	binary
 *.xml           text
 *.yml           text
 *.toml			text
-
 # These files are binary and should be left untouched
 # (binary is a macro for -text -diff)
 *.class         binary
@@ -151,19 +133,15 @@ bin/	binary
 *.png           binary
 *.so            binary
 *.war binary      
-
 ### gitattributes/Matlab.gitattributes d2539f6 on Dec 3, 2015
 # Basic .gitattributes for a MATLAB repo.
 # This template includes Simulink and MuPAD extensions, in addition
 # to the MATLAB extensions.
-
 # Source files
 # ============
 *.m             text
 *.mu            text
-
 # Caution: *.m also matches Mathematica packages.
-
 # Binary files
 # ============
 *.p             binary
@@ -179,10 +157,8 @@ bin/	binary
 *.mlappinstall  binary
 *.mlpkginstall  binary
 *.mn binary      
-
 ### gitattributes/Python.gitattributes cbd3af4 on Jun 20, 2018
 # Basic .gitattributes for a python repo.
-
 # Source files
 # ============
 *.pxd		text diff=python
@@ -190,7 +166,6 @@ bin/	binary
 *.py3 		text diff=python
 *.pyw 		text diff=python
 *.pyx  		text diff=python
-
 # Binary files
 # ============
 *.db		binary
@@ -199,15 +174,12 @@ bin/	binary
 *.pyc 		binary
 *.pyd		binary
 *.pyo 		binary
-
 # Note: .db, .p, and .pkl files are associated
 # with the python modules ``pickle``, ``dbm.*``,
 # ``shelve``, ``marshal``, ``anydbm``, & ``bsddb``
 # (among others).      
-
 ### gitattributes/R.gitattributes 80aacc1 on Aug 22, 2015
 # Basic .gitattributes for a R repo.
-
 # Source files
 # ============
 *.Rdata     text
@@ -217,5 +189,6 @@ bin/	binary
 *.Rdx       binary
 *.Rmd		text
 *.R text
-      
-
+*.y filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.gz filter=lfs diff=lfs merge=lfs -text
