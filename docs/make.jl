@@ -5,7 +5,7 @@ DocMeta.setdocmeta!(Prots, :DocTestSetup, :(using Prots); recursive=true)
 
 makedocs(;
     modules=[Prots],
-    authors="Kool",
+    authors="Dan Kool",
     repo="https://github.com/kool7d/Prots.jl/blob/{commit}{path}#{line}",
     sitename="Prots.jl",
     format=Documenter.HTML(;
@@ -18,6 +18,8 @@ makedocs(;
     ],
 )
 
-deploydocs(;
-    repo="github.com/kool7d/Prots.jl",
+deploydocs(
+    repo="github.com/kool7d/Prots.jl.git",
+    target = "build",
+    push_preview = true
 )
